@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Sidebar",
+  "version": "1.0.0.0",
+  "description": "Use ChatGPT in sidebar.",
+  "icons": {
+    "48": "/assets/images/ChatGPTIcon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "/assets/images/ChatGPTIcon.png",
+      "48": "/assets/images/ChatGPTIcon.png",
+      "128": "/assets/images/ChatGPTIcon.png"
+    },
+    "default_panel": "panel.html",
+    "default_title": "ChatGPT",
+    "open_at_install": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "/assets/images/ChatGPTIcon.png",
+      "128": "/assets/images/ChatGPTIcon.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chatgptsidebar@mjerem34.org"
+    }
+  }
+}
